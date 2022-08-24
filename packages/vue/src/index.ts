@@ -17,6 +17,9 @@ function compileToFunction(
   template: string | HTMLElement,
   options?: CompilerOptions
 ): RenderFunction {
+  console.log('====================================');
+  console.log(template, "template");
+  console.log('====================================');
   if (!isString(template)) {
     if (template.nodeType) {
       template = template.innerHTML

@@ -1,0 +1,17 @@
+<script src="../../dist/vue.global.js"></script>
+
+<div id="demo">
+    This is vue3
+    <p>{{msg}}</p>
+</div>
+<script>
+    const { createApp, ref, reactive } = Vue;
+    createApp({
+        setup(props) {
+            let msg = ref("这是测试")
+            return {
+                msg
+            }
+        }
+    }).mount("#demo")
+</script>
